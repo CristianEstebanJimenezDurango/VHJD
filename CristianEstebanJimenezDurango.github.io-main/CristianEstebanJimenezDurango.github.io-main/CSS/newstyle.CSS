@@ -1,0 +1,560 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+/*  start Header */
+header {
+    grid-area: header;
+    background-color: #ff5100;
+    color: white;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+/*End header */
+
+/*Nav area start*/
+
+
+.navmenu {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    /* allow wrapping if too long */
+    justify-content: center;
+    /* center links */
+    align-items: center;
+    background-color: #ff5100;
+    padding: 10px 0;
+    gap: 10px;
+    /* space between links */
+}
+
+
+.navmenu a {
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+
+.navmenu a:hover {
+    color: #fddb3a;
+}
+
+/*Nav area finish */
+
+/*aside start*/
+aside {
+    grid-area: aside;
+    margin-top: 20px;
+
+}
+
+#leftcol {
+    margin-left: 2%;
+    width: 95%;
+    background-color: #e6e6e6;
+    margin-bottom: 25px;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtittle::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.leftcolcontent {
+    flex-grow: 1;
+}
+
+
+
+.subtittle button {
+    background-color: #ff5100;
+    font-size: 11px;
+    margin-top: 10px;
+    border-radius: 3px;
+    color: #fff;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.subtittle button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+#leftcol .paragraph {
+    font-size: 11px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+#leftcol .AOP .paragraph li {
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    align-items: center;
+
+}
+
+#leftcol .AOP .paragraph li::before {
+    content: "*";
+    color: #ff5100;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#leftcol .paragraph li {
+    font-family: monospace;
+    font-size: 11px;
+    list-style: none;
+}
+
+.paragraph {
+    font-family: monospace;
+    font-size: 11px;
+}
+
+.Visapicture img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+
+
+.contact {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.contact .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*itemform*/
+.itemform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.itemform label {
+    font-weight: 700;
+}
+
+.itemform input,
+.itemform textarea {
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+input[type="submit"] {
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.sn .resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px none #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.sn {
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+
+.sn a:-webkit-any-link {
+    color: white;
+}
+
+.sn a:-moz-any-link {
+    color: white;
+}
+
+.sn a:hover {
+    color: #ff5100;
+}
+
+.sn li {
+    float: right;
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.sn ul {
+    list-style: none;
+}
+
+.sn i {
+    font-size: 34px;
+}
+
+/* aside finsh*/
+
+/*Article start main atrributes*/
+
+main {
+    grid-area: main;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+
+.resume-title {
+    font-variant: small-caps;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.resume-entry {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.resume-left {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.resume-date {
+    border-right: 2px solid #444;
+    padding-right: 15px;
+    font-weight: 300;
+    margin-right: 15px;
+    white-space: nowrap;
+    min-width: 90px;
+}
+
+.resume-logo {
+    height: 50px;
+    align-self: start;
+}
+
+.paragraph li {
+    text-align: right;
+    font-family: monospace;
+    font-size: 15px;
+    list-style: none;
+}
+
+/*Article start main atrributes*/
+
+/*
+working on small correction*/
+
+#workingon .paragraph{
+    margin-right: 20px;
+}
+
+/* Start Miscellanea*/
+
+.DegreeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+/*Finish Miscellanea*/
+
+/* Skills bar start*/
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.skill-item .subtittle {
+    flex: 0 0 65px;
+    /* fixed width for buttons */
+}
+
+.skill-item .subtittle button {
+    background-color: #b3b3b3;
+    font-size: 11px;
+    border-radius: 3px;
+    color: #222;
+    padding: 5px 10px;
+    border: groove;
+    width: 100%;
+    text-align: center;
+}
+
+
+.skill-item .container {
+    flex: 0 0 65%;
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    line-height: 20px;
+    color: white;
+    padding-left: 5px;
+    font-size: 11px;
+    text-align: right;
+}
+
+.Matlab {
+    width: 80%;
+    background-color: #ff5100;
+}
+
+.Latex {
+    width: 70%;
+    background-color: #f98000;
+}
+
+.Python {
+    width: 60%;
+    background-color: #f2a03d;
+}
+
+.Comsol {
+    width: 70%;
+    background-color: #fcb800;
+}
+
+.Blender {
+    width: 30%;
+    background-color: #ffbb55;
+}
+
+/*Skills bar finish*/
+
+
+/*Grants and languages grid start*/
+
+.gridmultim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-top: 20px;
+}
+
+.gridmultim .resume-content {
+    display: flex;
+    justify-content: space-between;
+    /* space between h3 and dots */
+    align-items: center;
+    /* vertical align */
+}
+
+/*Grants and lanuguges finish*/
+
+/*Languages circles style design*/
+
+
+.lang-dots {
+    display: flex;
+    gap: 4px;
+    margin-left: 30px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #ccc;
+
+}
+
+.dot.full {
+    background-color: #00b5e2;
+    /* bright blue */
+}
+
+.dot.half {
+    background-color: #88d9f5;
+    /* light blue */
+}
+
+.dot.empty {
+    background-color: #ccc;
+    /* gray */
+}
+
+/*End Languages circles style design*/
+
+/*Publications style Start*/
+
+
+.squarepubli {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #222;
+    /* thickness, style, color */
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.card .imagen {
+    height: 150px;
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 250px;
+}
+
+
+/*Publications style End*/
+
+/*Congress and poster modification start*/
+
+#congress .card {
+    background-color: #b3b3b3;
+}
+
+
+/*Courses start*/
+
+#courses .card img {
+    width: 250px;
+    height: 150px;
+}
+
+/*footer style end*/
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footer ul {
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li a {
+    font-size: 16px;
+    text-decoration: none;
+    gap: 8px;
+    color: white;
+}
+
+.footer li a:hover {
+    color: #ff5100;
+}
+
+.footer i {
+    font-size: 18px;
+}

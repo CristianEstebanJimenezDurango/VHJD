@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Victor Hugo Jimenez Durango</title>
+    <script src="https://kit.fontawesome.com/ca60a188f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Style_VHJD.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/Colorarios/scaner010.jpg" alt="Header_Proyectos">
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">Victor Hugo Jiménez Durango</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index_VHJD.html">Inicio</a></li>
+            <li><a href="sobre_mi_VHJD.html">Sobre mí</a></li>
+            <li><a href="proyectos_VHJD.html" style="color: #ff5100;">Proyectos</a></li>
+            <li><a href="blog_VHJD.html">Blog</a></li>
+            <li><a href="index_VHJD.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Category 1: Publicaciones -->
+        <section id="publicaciones" class="projects-section">
+            <div class="container">
+                <div class="project-category">
+                    <h3>Publicaciones</h3>
+                    <div class="projects-grid">
+                        <!-- Cards will be populated dynamically by proyectos_data.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 2: Audiovisuales -->
+        <section id="audiovisuales" class="projects-section" style="background-color: #fff;">
+            <div class="container">
+                <div class="project-category">
+                    <h3>Audiovisuales</h3>
+                    <div class="projects-grid">
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/ZUJ8vvu4sMA?si=J0DdZ9TLeEAhdfUf', 'Jhonny Rentería Martínez 2024')">
+                                <iframe src="https://www.youtube.com/embed/ZUJ8vvu4sMA?si=J0DdZ9TLeEAhdfUf"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Jhonny Rentería Martínez 2024
+                            </p>
+                        </div>
+
+
+                        <!-- Video 1 -->
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/SsEDcoUnXjs', 'Rayo de Luz 2024')">
+                                <iframe src="https://www.youtube.com/embed/SsEDcoUnXjs" allow="autoplay"
+                                    allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">Rayo
+                                de Luz 2024</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/TcdEfk9HX9s?si=tVEV8FIzKpe--Qcy', 'Entrega Maleta CDCM 2023')">
+                                <iframe src="https://www.youtube.com/embed/TcdEfk9HX9s?si=tVEV8FIzKpe--Qcy"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Entrega Maleta CDCM 2023</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/mS_gQvHpzWU?si=XE8BCJl2iyWyHRDp', 'Maleta textil de Cine y Video: Moravia Imaginada. (Experimental biográfico) 2022')">
+                                <iframe src="https://www.youtube.com/embed/mS_gQvHpzWU?si=XE8BCJl2iyWyHRDp"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Maleta textil de Cine y Video: Moravia Imaginada. (Experimental biográfico) 2022</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/3AH2hxs4heY?si=E8Q0odbnSIyANfvg', 'Maleta de Cine y Video Moravia Audiovisual (prototipo) 2022')">
+                                <iframe src="https://www.youtube.com/embed/3AH2hxs4heY?si=E8Q0odbnSIyANfvg"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Maleta de Cine y Video Moravia Audiovisual (prototipo) 2022</p>
+                        </div>
+
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/7DSZaehcD14?si=5x2rI05cZm3VZtYU', 'Velada cultural Castilla 2021')">
+                                <iframe src="https://www.youtube.com/embed/7DSZaehcD14?si=5x2rI05cZm3VZtYU"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Velada cultural Castilla 2021</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/gSdcvlu0Aps?si=ShtaY8aa3s4IvhBS', 'Moravia TV: Ana Tulia y la Misa Colombiana (experimental) 2021')">
+                                <iframe src="https://www.youtube.com/embed/gSdcvlu0Aps?si=ShtaY8aa3s4IvhBS"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Moravia TV: Ana Tulia y la Misa Colombiana (experimental) 2021</p>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/KDuWYoArJws?si=RkjR8QWc4k1SJZnb&amp;start=2', 'Moravia imaginada')">
+                                <iframe src="https://www.youtube.com/embed/KDuWYoArJws?si=RkjR8QWc4k1SJZnb&amp;start=2"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Moravia Audiovisual. Laboratorio de Apropiación Documental 2021</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/vZTRrF_N6cE?si=N2fwYQZ-MxOINPTc', 'Moravia imaginada Trailer')">
+                                <iframe src="https://www.youtube.com/embed/vZTRrF_N6cE?si=N2fwYQZ-MxOINPTc"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Moravia Audiovisual. Laboratorio de Apropiación Documental (Trailer) 2021</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/5b-eAGn63nw?si=6K8WxosXlTQRlO-9', 'Memoria Audiovisual Moravia Imaginada 2020')">
+                                <iframe src="https://www.youtube.com/embed/5b-eAGn63nw?si=6K8WxosXlTQRlO-9"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Memoria Audiovisual Moravia Imaginada 2020</p>
+                        </div>
+
+
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/QZlbRe_V1eI?si=o9rcz9hJCLYdBvWl', 'TARMAC - Outro (Mash Dem Down) 2020')">
+                                <iframe src="https://www.youtube.com/embed/QZlbRe_V1eI?si=o9rcz9hJCLYdBvWl"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                TARMAC - Outro (Mash Dem Down) 2020</p>
+                        </div>
+
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/VvphUI32uRw?si=jlWgnW09eg0Ux_jG', 'Arrieros 2019')">
+                                <iframe src="https://www.youtube.com/embed/VvphUI32uRw?si=jlWgnW09eg0Ux_jG"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Arrieros 2019</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/FHCkAfmPU6E?si=NVMD3yGvER00li98', 'Galería Viva Agroarte 2019')">
+                                <iframe src="https://www.youtube.com/embed/FHCkAfmPU6E?si=NVMD3yGvER00li98"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Galería Viva Agroarte 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/lj5fDrbkRpY?si=JzTSE24muw17yptN', 'Museo Urbano de Memorias 2019')">
+                                <iframe src="https://www.youtube.com/embed/lj5fDrbkRpY?si=JzTSE24muw17yptN"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Museo Urbano de Memorias 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/e2Exy6CnPVY?si=uOqgeySzJfZVf0Um', 'Pictour 2019')">
+                                <iframe src="https://www.youtube.com/embed/e2Exy6CnPVY?si=uOqgeySzJfZVf0Um"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Pictour 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/yppXFnWGU38?si=emHbkSRG78vYil5k', 'Graffitour C13 2019')">
+                                <iframe src="https://www.youtube.com/embed/yppXFnWGU38?si=emHbkSRG78vYil5k"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Graffitour C13 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/lTiZApgldVs?si=5lC_Lq1fikXdxWZ1', 'Ayacucho 2019')">
+                                <iframe src="https://www.youtube.com/embed/lTiZApgldVs?si=5lC_Lq1fikXdxWZ1"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Ayacucho 2019</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/17sz7OrD51M?si=T19kOtWqyC80S-FI', 'Ayacucho Color Tour 2019')">
+                                <iframe src="https://www.youtube.com/embed/17sz7OrD51M?si=T19kOtWqyC80S-FI"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Ayacucho Color Tour 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/pez8Qjb2bao?si=PDNwNkmAnqNKfKx5', 'Galeria Convites 2019')">
+                                <iframe src="https://www.youtube.com/embed/pez8Qjb2bao?si=PDNwNkmAnqNKfKx5"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Galeria Convites 2019</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/OnkAKw1f32A?si=Zxfv7B9FNuaoz5Vl', 'Graffitour Casa Kolacho 2019')">
+                                <iframe src="https://www.youtube.com/embed/OnkAKw1f32A?si=Zxfv7B9FNuaoz5Vl"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Graffitour Casa Kolacho 2019</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/cS95VrVu7gA?si=lubf2pwMNy4Y2U1c', 'Zona de graffitis 2019')">
+                                <iframe src="https://www.youtube.com/embed/cS95VrVu7gA?si=lubf2pwMNy4Y2U1c"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Zona de graffitis 2019</p>
+                        </div>
+
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/JUCjB92f0Cw?si=njF8amJvnyfseP79', 'Cantos de paz 2015')">
+                                <iframe src="https://www.youtube.com/embed/JUCjB92f0Cw?si=njF8amJvnyfseP79"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Cantos de paz 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/6ZdsudFjTuU?si=zqTczMRbX8oVHq-6', 'Tambó: El Bullerengue Ritual y Festivo - Corto Documental 2015')">
+                                <iframe src="https://www.youtube.com/embed/6ZdsudFjTuU?si=zqTczMRbX8oVHq-6"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Tambó: El Bullerengue Ritual y Festivo - Corto Documental 2015</p>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/nfLKPuARhnA?si=QkcROp9xf4wgH3U4', 'VIVENCIAS DEL BARRIO. Memorias y familias de Alfonso lópez, Boyacá y Castilla. 1950 - 1980 2015')">
+                                <iframe src="https://www.youtube.com/embed/nfLKPuARhnA?si=QkcROp9xf4wgH3U4"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                VIVENCIAS DEL BARRIO. Memorias y familias de Alfonso lópez, Boyacá y Castilla. 1950 -
+                                1980 2015
+                            </p>
+                        </div>
+
+
+                        <!-- Video 5 -->
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/VYrytfzLQHU?si=qBkkRQbfiiETSvlT&amp;start=2', 'Tengo una bala en mi cuerpo - tráiler')">
+                                <iframe src="https://www.youtube.com/embed/VYrytfzLQHU?si=qBkkRQbfiiETSvlT&amp;start=2"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Tengo una bala en mi cuerpo - tráiler</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/p78DEMjtbC4?si=BSw9-Ya7gVA9C_rx', 'Graffiti de la 5 20215')">
+                                <iframe src="https://www.youtube.com/embed/p78DEMjtbC4?si=BSw9-Ya7gVA9C_rx"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Graffiti de la 5 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/tnrtWK-A8oM?si=0XZ5tgiWy0mauX54', 'Puro Feeling ALERTA KAMARADA y TARMAC 2015')">
+                                <iframe src="https://www.youtube.com/embed/tnrtWK-A8oM?si=0XZ5tgiWy0mauX54"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Puro Feeling ALERTA KAMARADA y TARMAC 2015</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/nCkcQJbBxrg?si=ErqNXY2vgzN1dJcs', 'Animation | Promo - Mar del cielo 2014')">
+                                <iframe src="https://www.youtube.com/embed/nCkcQJbBxrg?si=ErqNXY2vgzN1dJcs"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Animation | Promo - Mar del cielo 2014</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/rAXlW9yqBo8?si=FW9aKxEcIJcRoEG_', 'Castilla es una Fiesta 2014')">
+                                <iframe src="https://www.youtube.com/embed/rAXlW9yqBo8?si=FW9aKxEcIJcRoEG_"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Castilla es una Fiesta 2014</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/RgAtreMwY6Y?si=RK7EYw20dZ2SH-MD', 'Terapia Parkinson 2015')">
+                                <iframe src="https://www.youtube.com/embed/RgAtreMwY6Y?si=RK7EYw20dZ2SH-MD"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Terapia Parkinson 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/yAQ3zyXol1Y?si=0SeJoVcMo_pcUiyj', 'Caribe: un barrio que transita 2015')">
+                                <iframe src="https://www.youtube.com/embed/yAQ3zyXol1Y?si=0SeJoVcMo_pcUiyj"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Caribe: un barrio que transita 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/GREGvOkMPQE?si=dMlje5OrqVcFwNcP', 'Cuenta Hasta Diez 2015')">
+                                <iframe src="https://www.youtube.com/embed/GREGvOkMPQE?si=dMlje5OrqVcFwNcP"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Cuenta Hasta Diez 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/4FZ-1RNAURs?si=O0sAAtYrRoA56R7u', 'La cultura y el emprendimiento en red 2015')">
+                                <iframe src="https://www.youtube.com/embed/4FZ-1RNAURs?si=O0sAAtYrRoA56R7u"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                La cultura y el emprendimiento en red 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/I9AP8hl7mxg?si=DmsB_rRvG6uJQZ2z', 'A Lo Propio 2015')">
+                                <iframe src="https://www.youtube.com/embed/I9AP8hl7mxg?si=DmsB_rRvG6uJQZ2z"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                A Lo Propio 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/EQ1PaZZpzAk?si=i3r46IavG7M8CvmL', 'Documental Memorias de la Paralela 2015')">
+                                <iframe src="https://www.youtube.com/embed/EQ1PaZZpzAk?si=i3r46IavG7M8CvmL"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Documental Memorias de la Paralela 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/NvHLRbbevRg?si=Ee1Sx9AVLYzl_Ouz', ' MONINGO corto - Dir: Juan Aristizabal 2015')">
+                                <iframe src="https://www.youtube.com/embed/NvHLRbbevRg?si=Ee1Sx9AVLYzl_Ouz"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                "MONINGO" corto - Dir: Juan Aristizabal 2015</p>
+                        </div>
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/WsBjR_2mhHs?si=N46FQv8nOuMpB8H9', 'El surco y la escoba 2012')">
+                                <iframe src="https://www.youtube.com/embed/WsBjR_2mhHs?si=N46FQv8nOuMpB8H9"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                El surco y la escoba 2012</p>
+                        </div>
+
+                        <!-- Video 6 -->
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/M8V-5lcfaeM?si=X1gybwb0yJyBdBfK&amp;start=6', 'Mi Morro Mi Moravia. Dignidades del suburbio')">
+                                <iframe src="https://www.youtube.com/embed/M8V-5lcfaeM?si=X1gybwb0yJyBdBfK&amp;start=6"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Mi Morro Mi Moravia. Dignidades del suburbio</p>
+                        </div>
+
+
+                        <div class="video-card">
+                            <div class="video-grid-item"
+                                onclick="openVideoModal('https://www.youtube.com/embed/aBqzfIM733k?si=Bocn0S_qDixXBQ_4', 'Acción Directa No Violenta')">
+                                <iframe src="https://www.youtube.com/embed/aBqzfIM733k?si=Bocn0S_qDixXBQ_4"
+                                    allow="autoplay" allowfullscreen></iframe>
+                                <div class="video-card-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <p class="video-title" style="text-align: center; margin-top: 15px; font-weight: bold;">
+                                Acción Directa No Violenta</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 3: Investigaciones -->
+        <section id="investigaciones" class="projects-section">
+            <div class="container">
+                <div class="project-category">
+                    <h3>Investigaciones</h3>
+                    <div class="projects-grid">
+                        <!-- Cards will be populated dynamically by proyectos_data.js -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <h2 id="modalTitle">Título del Proyecto</h2>
+            <div class="modal-body">
+                <h3>Resumen (Abstract)</h3>
+                <p id="modalAbstract">Cargando abstract...</p>
+                <h3>Resultados</h3>
+                <p id="modalResults">Cargando resultados...</p>
+            </div>
+            <!-- Modal Buttons -->
+            <div class="modal-buttons">
+                <a id="modalLinkBtn" href="#" target="_blank" class="modal-btn modal-btn-link" style="display: none;">
+                    <i class="fa-solid fa-external-link"></i> Ver más
+                </a>
+                <a id="modalInstagramBtn" href="#" target="_blank" class="modal-btn modal-btn-instagram"
+                    style="display: none;">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a id="modalTwitterBtn" href="#" target="_blank" class="modal-btn modal-btn-twitter"
+                    style="display: none;">
+                    <i class="fa-brands fa-x-twitter"></i> X
+                </a>
+                <a id="modalDownloadBtn" href="#" target="_blank" class="modal-btn modal-btn-download"
+                    style="display: none;">
+                    <i class="fa-solid fa-download"></i> Descargar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content modal-video-content">
+            <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+            <h2 id="videoModalTitle">Título del Video</h2>
+            <div class="video-container-modal">
+                <iframe id="modalVideoFrame" src="" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Victor Hugo Jiménez Durango. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="proyectos_data.js"></script>
+    <script src="Script_VHJD.js"></script>
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("nav-links");
+            links.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

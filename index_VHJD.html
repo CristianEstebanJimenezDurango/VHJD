@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Hugo Jimenez Durango</title>
+    <script src="https://kit.fontawesome.com/ca60a188f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/Style_VHJD.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/Colorarios/scaner010.jpg" alt="Header_1">
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">Victor Hugo Jiménez Durango</div>
+        <!-- Hamburger Icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index_VHJD.html">Inicio</a></li>
+            <li><a href="sobre_mi_VHJD.html">Sobre mí</a></li>
+            <li><a href="proyectos_VHJD.html">Proyectos</a></li>
+            <li><a href="blog_VHJD.html">Blog</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="profile-section">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="images/Perfil_1.jpeg" alt="Victor Hugo Jimenez">
+                </div>
+                <div class="profile-text">
+                    <h2>Hola, soy Victor Hugo Jiménez Durango</h2>
+                    <p> Soy un apasionado Artista, Activista, Creativo,
+                        Comunicador, Cuidador, Director, Escritor, Gestor,
+                        Guionista, Historiador, Investigador, Locutor,
+                        Objetor por conciencia y Productor.
+                    </p>
+                </div>
+            </div>
+            <!-- Video Section -->
+            <div class="profile-video">
+                <iframe src="https://drive.google.com/file/d/0B0cnXJ6NEWQ8YU1hU3ZvXzFVZWc/preview" allow="autoplay"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about-section">
+            <div class="container">
+                <h2>Formación Académica</h2>
+                <p class="intro-text">
+                    Artista, activista y comunicador popular. Documentalista y productor audiovisual. Estudió Historia
+                    en la
+                    Universidad Nacional de Colombia – Sede Medellín. Estudió en el Consejo Latinoamericano de Ciencias
+                    Sociales – CLACSO la especialización en Memorias Colectivas, Derechos Humanos y Resistencias.
+                    Estudió
+                    la maestría en Ciencias de la Información con énfasis en Memoria y Sociedad en la Escuela de
+                    Bibliotecología de la Universidad de Antioquia. Estudia actualmente el doctorado en Comunicaciones y
+                    Narrativas de a Facultad de Comunicaciones y Filología de la Universidad de Antioquia.
+                    Profesor de cátedra de la Escuela Interamericana de Bibliotecología de la Universidad de Antioquia.
+                    Profesional en sistematización y gestión del conocimiento de la Agencia APP del Distrito de Medellín
+                </p>
+                <div class="academic-grid">
+                    <div class="academic-card"
+                        onclick="openAcademicModal('Doctorado', 'Comunicación y narrativas', 'En proceso. Facultad de Comunicaciones y Filología. Universidad de Antioquia. 2025', '', '')">
+                        <i class="fa-solid fa-graduation-cap icon"></i>
+                        <h3>Doctorado</h3>
+                        <p class="status">En proceso</p>
+                        <p>Comunicación y narrativas. Facultad de Comunicaciones y
+                            Filología. Universidad de Antioquia. 2025 </p>
+                    </div>
+                    <div class="academic-card"
+                        onclick="openAcademicModal('Maestría', 'Ciencias de la información, memoria y sociedad', 'Completado. Escuela Interamericana de Bibliotecología. Universidad de Antioquia. 2019-2022.', 'https://bibliotecadigital.udea.edu.co/', '')">
+                        <i class="fa-solid fa-certificate icon"></i>
+                        <h3>Maestría</h3>
+                        <p class="status">Completado</p>
+                        <p>Ciencias de la información, memoria y sociedad. Escuela
+                            Interamericana de Bibliotecología. Universidad de Antioquia. 2019-2022.</p>
+                    </div>
+                    <div class="academic-card"
+                        onclick="openAcademicModal('Pregrado', 'Historia', 'Completado. Universidad Nacional de Colombia - Sede Medellín. 2002 - 2008. Graduación en septiembre de 2009', '', '')">
+                        <i class="fa-solid fa-book icon"></i>
+                        <h3>Pregrado</h3>
+                        <p class="status">Completado</p>
+                        <p>Historia. Universidad Nacional de Colombia - Sede
+                            Medellín. 2002 - 2008. Graduación en septiembre de 2009</p>
+                    </div>
+                    <div class="academic-card"
+                        onclick="openAcademicModal('Especialización', 'Memorias Colectivas, Derechos Humanos y Resistencias', 'Completado. CLACSO - Consejo Latinoamericano de Ciencias Sociales.', 'https://www.clacso.org/', '')">
+                        <i class="fa-solid fa-Award icon"></i>
+                        <h3>Especialización</h3>
+                        <p class="status">Completado</p>
+                        <p>Especialización en Memorias Colectivas, Derechos Humanos y Resistencias.
+                            CLACSO - Consejo Latinoamericano de Ciencias Sociales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academic Detail Modal -->
+        <div id="academicModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeAcademicModal()">&times;</span>
+                <h2 id="academicModalTitle">Formación Académica</h2>
+                <div class="modal-body">
+                    <h3>Tesis / Enfoque</h3>
+                    <p id="academicModalThesis">Cargando tesis...</p>
+                    <h3>Resumen</h3>
+                    <p id="academicModalAbstract">Cargando resumen...</p>
+                    <div id="academicModalMedia" class="modal-media-container"></div>
+                    <a id="academicModalLink" href="#" target="_blank" class="modal-link-btn">Ver más
+                        detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <section id="proyectos" class="projects-section">
+            <div class="container">
+
+                <!-- Category 1: Publicaciones -->
+                <div class="project-category">
+                    <a href="proyectos_VHJD.html#publicaciones" style="text-decoration: none;">
+                        <h3>Publicaciones</h3>
+                    </a>
+                    <div class="projects-grid">
+                        <div class="project-card"
+                            style="background-image: url('images/publicaciones/memoria_moravia/deuils_memoires_couverture.jpg.jpeg');"
+                            onclick="location.href='proyectos_VHJD.html#publicaciones'">
+                            <div class="project-overlay">
+                                <h3>Memoria Moravia:</h3>
+                                <p> representaciones audiovisuales y formas
+                                    del duelo de un barrio popular en
+                                    Medellín (Colombia) 1976-2021</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner002.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#publicaciones'">
+                            <div class="project-overlay">
+                                <h3>Publicación 2</h3>
+                                <p>Descripción breve de la publicación.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner003.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#publicaciones'">
+                            <div class="project-overlay">
+                                <h3>Publicación 3</h3>
+                                <p>Descripción breve de la publicación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2: Audiovisuales -->
+                <div class="project-category">
+                    <a href="proyectos_VHJD.html#audiovisuales" style="text-decoration: none;">
+                        <h3>Audiovisuales</h3>
+                    </a>
+                    <div class="projects-grid">
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner004.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#audiovisuales'">
+                            <div class="project-overlay">
+                                <h3>Proyecto Audiovisual 1</h3>
+                                <p>Descripción breve del proyecto audiovisual.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner005.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#audiovisuales'">
+                            <div class="project-overlay">
+                                <h3>Proyecto Audiovisual 2</h3>
+                                <p>Descripción breve del proyecto audiovisual.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner006.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#audiovisuales'">
+                            <div class="project-overlay">
+                                <h3>Proyecto Audiovisual 3</h3>
+                                <p>Descripción breve del proyecto audiovisual.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3: Investigaciones -->
+                <div class="project-category">
+                    <a href="proyectos_VHJD.html#investigaciones" style="text-decoration: none;">
+                        <h3>Investigaciones</h3>
+                    </a>
+                    <div class="projects-grid">
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner007.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#investigaciones'">
+                            <div class="project-overlay">
+                                <h3>Investigación 1</h3>
+                                <p>Descripción breve de la investigación.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner008.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#investigaciones'">
+                            <div class="project-overlay">
+                                <h3>Investigación 2</h3>
+                                <p>Descripción breve de la investigación.</p>
+                            </div>
+                        </div>
+                        <div class="project-card" style="background-image: url('images/Colorarios/scaner009.jpg');"
+                            onclick="location.href='proyectos_VHJD.html#investigaciones'">
+                            <div class="project-overlay">
+                                <h3>Investigación 3</h3>
+                                <p>Descripción breve de la investigación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-content">
+                    <a href="https://x.com/3barbas" target="_blank"><i class="fa-brands fa-x-twitter"></i> @3barbas</a>
+                    <a href="mailto:3barbas@gmail.com"><i class="fa-solid fa-envelope"></i> 3barbas@gmail.com</a>
+                    <a href="tel:+573017275623"><i class="fa-solid fa-phone"></i> +57 301 727 5623</a>
+                    <a href="Documents/3. HOJA DE VIDA PERSONAL.pdf" download class="download-btn">
+                        <i class="fa-solid fa-file-arrow-down"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Victor Hugo Jiménez Durango. Todos los derechos reservados.</p>
+    </footer>
+    <script src="Script_VHJD.js"></script>
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("nav-links");
+            links.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

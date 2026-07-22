@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Victor Hugo Jiménez Durango</title>
+    <script src="https://kit.fontawesome.com/ca60a188f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Style_VHJD.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="images/Colorarios/scaner015.jpg" alt="Header_Blog">
+        </div>
+    </header>
+
+    <nav>
+        <div class="logo">Victor Hugo Jiménez Durango</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+            <li><a href="index_VHJD.html">Inicio</a></li>
+            <li><a href="sobre_mi_VHJD.html">Sobre mí</a></li>
+            <li><a href="proyectos_VHJD.html">Proyectos</a></li>
+            <li><a href="blog_VHJD.html" style="color: #ff5100;">Blog</a></li>
+            <li><a href="index_VHJD.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container" style="padding-top: 60px;">
+            <h1 style="text-align: center; color: #444; font-size: 2.5rem; margin-bottom: 20px;">Mi Blog</h1>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #666;">
+                Un espacio de reflexión sobre investigación, narrativas, arte urbano y memoria colectiva.
+            </p>
+
+            <div id="blog-posts-container" class="blog-grid">
+                <p style="text-align: center; color: #666;">Cargando últimas entradas...</p>
+            </div>
+
+            <div class="go-to-blog-container">
+                <a href="https://utopiasyheterotopiasurbanas.blogspot.com" target="_blank" class="btn-large">
+                    Ir al Blog Principal <i class="fa-solid fa-external-link"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Victor Hugo Jiménez Durango. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Script_VHJD.js"></script>
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("nav-links");
+            links.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
